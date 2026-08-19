@@ -22,12 +22,11 @@ em{font-family:var(--si);font-style:italic;font-weight:500;color:var(--accent);f
 .nav{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px 40px;color:var(--ivory);transition:.45s;background:var(--ink)}
 .nav.on{background:rgba(242,239,231,.94);backdrop-filter:blur(14px);color:var(--ink);box-shadow:0 1px 0 var(--line)}
 .nav b{font-family:var(--serif);font-weight:400;font-size:19px;letter-spacing:.15em;white-space:nowrap}.nav b span{color:var(--accent)}
-.nav .lk{display:flex;gap:26px}
+.nav .lk{display:flex;gap:24px}
 .nav .lk a{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;opacity:.85}
 .nav .lk a:hover{opacity:1;color:var(--accent)}
 .nav a.cta{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;border:1px solid currentColor;padding:10px 22px;border-radius:999px;transition:.35s;white-space:nowrap}
 .nav a.cta:hover{background:var(--accent);border-color:var(--accent);color:var(--ivory)}
-/* split hero */
 .hero{display:grid;grid-template-columns:46fr 54fr;min-height:100svh}
 .hero .panel{background:var(--ink);color:var(--ivory);display:flex;flex-direction:column;justify-content:center;padding:130px 56px 40px}
 .hero .k{font-size:10px;letter-spacing:.3em;text-transform:uppercase;font-weight:600;color:var(--accent);margin-bottom:26px}
@@ -35,9 +34,9 @@ h1{font-family:var(--serif);font-weight:400;font-size:clamp(34px,3.6vw,58px);lin
 h1 .l{display:block;overflow:hidden}h1 .l>span{display:block;transform:translateY(112%)}
 .hero .sub{margin-top:24px;font-size:14.5px;font-weight:300;max-width:460px;opacity:.85;line-height:1.8}
 .hero .acts{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
-.btn{display:inline-block;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;padding:15px 30px;border-radius:999px;transition:.4s}
+.btn{display:inline-block;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;padding:15px 30px;border-radius:999px;transition:.4s;border:none;cursor:pointer;font-family:var(--sans)}
 .btn.light{background:var(--ivory);color:var(--ink)}.btn.light:hover{background:var(--accent);color:var(--ivory)}
-.btn.ghost{border:1px solid rgba(242,239,231,.5);color:var(--ivory)}.btn.ghost:hover{background:rgba(242,239,231,.14)}
+.btn.ghost{border:1px solid rgba(242,239,231,.5);color:var(--ivory);background:none}.btn.ghost:hover{background:rgba(242,239,231,.14)}
 .btn.dark{background:var(--ink);color:var(--ivory)}.btn.dark:hover{background:var(--accent)}
 .hero .hstats{margin-top:52px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-l);border:1px solid var(--line-l)}
 .hero .hstats div{background:var(--ink);padding:16px 14px}
@@ -45,18 +44,25 @@ h1 .l{display:block;overflow:hidden}h1 .l>span{display:block;transform:translate
 .hero .hstats i{font-style:normal;font-size:8px;letter-spacing:.16em;text-transform:uppercase;opacity:.65;display:block;margin-top:3px}
 .hero .media{position:relative;overflow:hidden;min-height:52vh}
 .hero .media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.1)}
-.hero .media .tag{position:absolute;left:26px;bottom:22px;z-index:2;color:var(--ivory);font-size:10px;letter-spacing:.22em;text-transform:uppercase;background:rgba(16,19,20,.55);backdrop-filter:blur(6px);padding:10px 16px;border-radius:999px}
+.hero .media .tag{position:absolute;left:26px;bottom:22px;z-index:2;color:var(--ivory);font-size:10px;letter-spacing:.18em;text-transform:uppercase;background:rgba(16,19,20,.6);backdrop-filter:blur(6px);padding:10px 16px;border-radius:999px;max-width:80%}
 .mq{background:var(--ink2);color:var(--ivory);overflow:hidden;padding:16px 0;border-top:1px solid var(--line-l)}
 .mq .t{display:flex;align-items:center;gap:36px;width:max-content;animation:mq 40s linear infinite}
 .mq span{font-family:var(--serif);font-size:15px;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap}
 .mq i{color:var(--accent);font-style:normal;font-size:10px}
 @keyframes mq{to{transform:translateX(-50%)}}
 .k{font-size:10px;letter-spacing:.3em;text-transform:uppercase;font-weight:600;color:var(--accent);margin-bottom:24px}
-.sect{padding:96px 40px;max-width:1280px;margin:0 auto}
+.sect{padding:92px 40px;max-width:1280px;margin:0 auto}
 .man h2{font-family:var(--serif);font-weight:400;font-size:clamp(26px,3.2vw,46px);line-height:1.26;max-width:920px}
 .man h2 .w{opacity:.14;transition:opacity .5s}
 .man .cols{margin-top:44px;display:grid;grid-template-columns:1fr 1fr;gap:44px}
 .man p{font-size:14.5px;font-weight:300;line-height:1.85;color:rgba(16,19,20,.8)}
+.off{max-width:none;background:var(--ivory-d)}
+.off .in{max-width:1280px;margin:0 auto}
+.orow{display:grid;grid-template-columns:56px 260px 1fr;gap:28px;align-items:baseline;padding:24px 4px;border-top:1px solid var(--line)}
+.orow:last-child{border-bottom:1px solid var(--line)}
+.orow .n{font-size:11px;letter-spacing:.2em;color:var(--accent);font-weight:600}
+.orow h4{font-family:var(--serif);font-weight:400;font-size:21px}
+.orow p{font-size:13.5px;font-weight:300;line-height:1.7;opacity:.75}
 .why{background:var(--ink);color:var(--ivory);max-width:none}
 .why .in{max-width:1280px;margin:0 auto}
 .why .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-l);border:1px solid var(--line-l)}
@@ -64,6 +70,17 @@ h1 .l{display:block;overflow:hidden}h1 .l>span{display:block;transform:translate
 .why h4{font-family:var(--serif);font-weight:400;font-size:19px;color:var(--accent);margin-bottom:12px}
 .why p{font-size:12.5px;font-weight:300;line-height:1.75;opacity:.78}
 .st{font-family:var(--serif);font-size:clamp(30px,3.6vw,52px);line-height:1.1;font-weight:400}
+.spot{display:grid;grid-template-columns:1.1fr 1fr;max-width:none;padding:0;min-height:78vh}
+.spot .im{overflow:hidden;position:relative}
+.spot .im img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.spot .bd{background:var(--ink2);color:var(--ivory);display:flex;flex-direction:column;justify-content:center;padding:80px 64px}
+.spot h3{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.4vw,50px);margin-bottom:8px}
+.spot .mt{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:24px}
+.spot p{font-size:14.5px;font-weight:300;line-height:1.8;opacity:.85;max-width:440px;margin-bottom:38px}
+.spot .specs{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-l);border:1px solid var(--line-l)}
+.spot .specs div{background:var(--ink2);padding:18px 16px}
+.spot .specs b{font-family:var(--serif);font-weight:400;font-size:17px;display:block;margin-bottom:5px}
+.spot .specs i{font-style:normal;font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;opacity:.65;line-height:1.5;display:block}
 .phead{display:flex;justify-content:space-between;align-items:flex-end;gap:26px;flex-wrap:wrap;margin-bottom:44px}
 .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .pc{background:var(--ivory-d);overflow:hidden;display:block}
@@ -73,6 +90,12 @@ h1 .l{display:block;overflow:hidden}h1 .l>span{display:block;transform:translate
 .pc .bd{padding:18px 20px 22px}
 .pc h3{font-family:var(--serif);font-weight:400;font-size:21px;margin-bottom:5px}
 .pc p{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;opacity:.6}
+.pc.txt{background:var(--ink);color:var(--ivory);aspect-ratio:auto;display:flex;flex-direction:column;justify-content:space-between;padding:26px 24px;min-height:230px;transition:background .4s}
+.pc.txt:hover{background:var(--ink2)}
+.pc.txt h3{font-size:24px}
+.pc.txt .arrow{color:var(--accent);font-size:18px;transition:transform .4s}
+.pc.txt:hover .arrow{transform:translateX(6px)}
+.pc.txt p{opacity:.55}
 .cloud{margin-top:44px}
 .cloud h5{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:18px}
 .cloud .tags{display:flex;flex-wrap:wrap;gap:9px}
@@ -83,18 +106,25 @@ h1 .l{display:block;overflow:hidden}h1 .l>span{display:block;transform:translate
 .groups h5{font-family:var(--serif);font-weight:400;font-size:17px;color:var(--accent);margin-bottom:14px}
 .groups li{font-size:12.5px;font-weight:300;padding:5px 0;border-bottom:1px solid var(--line);opacity:.8}
 .groups li:last-child{border:none}
-.gal{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;padding:0 40px 96px;max-width:1280px;margin:0 auto}
-.gal figure{overflow:hidden;margin:0}
-.gal img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;transition:transform 1s cubic-bezier(.22,1,.36,1)}
+.gal{display:grid;grid-template-columns:repeat(var(--gc,4),1fr);gap:14px;padding:0 40px 92px;max-width:1280px;margin:0 auto}
+.gal figure{overflow:hidden;margin:0;position:relative}
+.gal img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3.2;transition:transform 1s cubic-bezier(.22,1,.36,1)}
 .gal figure:hover img{transform:scale(1.06)}
-.gal figure:first-child{grid-row:span 2}.gal figure:first-child img{aspect-ratio:auto;height:100%}
+.gal figcaption{position:absolute;inset:auto 0 0 0;padding:36px 16px 13px;font-size:11px;letter-spacing:.04em;color:var(--ivory);background:linear-gradient(180deg,transparent,rgba(16,19,20,.82))}
 .news{background:var(--ivory-d);max-width:none}
 .news .in{max-width:1280px;margin:0 auto}
-.nrow{display:grid;grid-template-columns:120px 1fr auto;gap:26px;align-items:baseline;padding:20px 4px;border-top:1px solid var(--line)}
+.nrow{display:grid;grid-template-columns:130px 1fr;gap:26px;align-items:baseline;padding:19px 4px;border-top:1px solid var(--line)}
 .nrow:last-child{border-bottom:1px solid var(--line)}
 .nrow .d{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600}
 .nrow .t{font-family:var(--serif);font-size:17px;line-height:1.4}
-.loc{padding:0 40px 96px;max-width:1280px;margin:0 auto}
+.lead{max-width:none;background:var(--ink);color:var(--ivory)}
+.lead .in{max-width:1280px;margin:0 auto}
+.lead .row{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-l);border:1px solid var(--line-l)}
+.lead .cell{background:var(--ink);padding:36px 32px}
+.lead h4{font-family:var(--serif);font-weight:400;font-size:24px;margin-bottom:4px}
+.lead .r{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+.lead p{font-size:13px;font-weight:300;line-height:1.8;opacity:.78}
+.loc{padding:0 40px 92px;max-width:1280px;margin:0 auto}
 .contact{background:var(--ink);color:var(--ivory);max-width:none}
 .contact .in{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:64px}
 .contact h2{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3.4vw,46px);line-height:1.12;margin-bottom:30px}
@@ -109,19 +139,22 @@ h1 .l{display:block;overflow:hidden}h1 .l>span{display:block;transform:translate
 .ftr{background:var(--ink);color:var(--ivory);padding:0 40px 30px}
 .ftr .in{max-width:1280px;margin:0 auto;border-top:1px solid var(--line-l);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:10.5px;letter-spacing:.05em;opacity:.6}
 @media(max-width:1020px){
-.hero{grid-template-columns:1fr}
+.hero,.spot{grid-template-columns:1fr}
 .hero .panel{padding:110px 24px 44px}
-.hero .media{min-height:44vh}
-.why .grid,.pgrid,.groups{grid-template-columns:1fr 1fr}
+.hero .media{min-height:44vh}.spot .im{min-height:44vh}
+.spot .bd{padding:64px 24px}
+.why .grid,.pgrid,.groups,.lead .row{grid-template-columns:1fr 1fr}
 .man .cols,.contact .in{grid-template-columns:1fr;gap:30px}
+.gal{grid-template-columns:1fr 1fr !important}
 .nav .lk{display:none}
+.orow{grid-template-columns:40px 1fr;gap:10px 16px}.orow p{grid-column:2}
 }
 @media(max-width:620px){
 .nav{padding:14px 18px}
-.sect{padding:72px 18px}.gal,.loc{padding-left:18px;padding-right:18px}
-.why .grid,.pgrid,.groups,.gal{grid-template-columns:1fr}
-.gal figure:first-child{grid-row:auto}
+.sect{padding:70px 18px}.gal,.loc{padding-left:18px;padding-right:18px}
+.why .grid,.pgrid,.groups,.gal,.lead .row{grid-template-columns:1fr !important}
 .hero .hstats{grid-template-columns:1fr 1fr}
+.spot .specs{grid-template-columns:1fr}
 .nrow{grid-template-columns:1fr;gap:6px}
 h1{font-size:clamp(30px,8vw,44px)}
 }
@@ -131,7 +164,7 @@ h1{font-size:clamp(30px,8vw,44px)}
 <div class="pre" id="pre"><span><b>DOSTI</b></span><i><s></s></i></div>
 <header class="nav" id="nav">
   <b>DOSTI&nbsp;<span>REALTY</span></b>
-  <nav class="lk"><a href="#about">About</a><a href="#why">Why Dosti</a><a href="#portfolio">Projects</a><a href="#news">News</a><a href="#locations">Locations</a></nav>
+  <nav class="lk"><a href="#about">About</a><a href="#offerings">What we build</a><a href="#why">Why Dosti</a><a href="#portfolio">Projects</a><a href="#locations">Locations</a></nav>
   <a class="cta" href="#contact">Get in touch</a>
 </header>
 <main>
@@ -143,30 +176,42 @@ h1{font-size:clamp(30px,8vw,44px)}
     <div class="acts"><a class="btn light" href="#portfolio">Explore projects</a><a class="btn ghost" href="#contact">Get in touch</a></div>
     <div class="hstats"><div><b>1980</b><i>Established</i></div><div><b>143+</b><i>Projects</i></div><div><b>21+ mn</b><i>Sq ft under development</i></div><div><b>33,500+</b><i>Families served</i></div></div>
   </div>
-  <div class="media"><img src="img/12.jpg" alt="DOSTI"/><span class="tag">One Dosti · Flagship destination</span></div>
+  <div class="media"><img src="img/12.jpg" alt="DOSTI"/><span class="tag">Dosti skyline · Mumbai Metropolitan Region</span></div>
 </section>
-<div class="mq"><div class="t"><span>One Dosti</span><i>✦</i><span>Dosti West County</span><i>✦</i><span>Dosti Greater Thane</span><i>✦</i><span>Dosti 604</span><i>✦</i><span>Dosti Primus</span><i>✦</i><span>Dosti in Pune</span><i>✦</i><span>One Dosti</span><i>✦</i><span>Dosti West County</span><i>✦</i><span>Dosti Greater Thane</span><i>✦</i><span>Dosti 604</span><i>✦</i><span>Dosti Primus</span><i>✦</i><span>Dosti in Pune</span><i>✦</i></div></div>
+<div class="mq"><div class="t"><span>Dosti West County</span><i>✦</i><span>Dosti Greater Thane</span><i>✦</i><span>Dosti 604</span><i>✦</i><span>Dosti Primus</span><i>✦</i><span>Dosti Eastern Bay</span><i>✦</i><span>Dosti in Pune</span><i>✦</i><span>One Dosti</span><i>✦</i><span>Dosti West County</span><i>✦</i><span>Dosti Greater Thane</span><i>✦</i><span>Dosti 604</span><i>✦</i><span>Dosti Primus</span><i>✦</i><span>Dosti Eastern Bay</span><i>✦</i><span>Dosti in Pune</span><i>✦</i><span>One Dosti</span><i>✦</i></div></div>
 <section class="sect man" id="about">
-  <p class="k">About</p>
+  <p class="k">About Dosti</p>
   <h2 id="mst">A home is not an address. It is a friendship that lasts for life.</h2>
   <div class="cols"><p>Ever since its inception in 1980, the foundation of Dosti Realty has been built on trust, reliability and togetherness. With a promise to constantly innovate and excel, Dosti Realty brings you one step closer to the most fulfilling experience of your life.</p><p>Dosti Realty is constructing over 21+ mn sq ft across the Mumbai Metropolitan Region and Pune, a Great Place to Work certified developer with more than 33,500 families calling a Dosti address home.</p></div>
 </section>
+<section class="sect off" id="offerings"><div class="in">
+  <p class="k">What we build</p>
+  <div class="orow"><span class="n">01</span><h4>Residences</h4><p>Homes across Mumbai, Thane and Pune, from 1 BHK to premium living.</p></div><div class="orow"><span class="n">02</span><h4>Senior living</h4><p>Dosti Primus in Thane: a community of care designed for seniors.</p></div><div class="orow"><span class="n">03</span><h4>Dosti Inner Circle</h4><p>Loyalty and referral programs for the Dosti family.</p></div><div class="orow"><span class="n">04</span><h4>NRI corner</h4><p>Dedicated buying support for non-resident Indians.</p></div>
+</div></section>
 <section class="sect why" id="why"><div class="in">
   <p class="k">Why Dosti</p>
-  <div class="grid"><div class="cell"><h4>Great Place to Work</h4><p>A certified workplace whose culture of care extends to every home it builds.</p></div><div class="cell"><h4>Buy now, pay later</h4><p>20:80 schemes and no pre-EMI for 15 months at Dosti West County.</p></div><div class="cell"><h4>Senior living pioneer</h4><p>Dosti Primus in Thane, a community of care designed for senior living.</p></div><div class="cell"><h4>Infrastructure upside</h4><p>Metro Line 5, twin tunnel and coastal road corridors around Balkum and Wagle Estate.</p></div></div>
+  <div class="grid"><div class="cell"><h4>Great Place to Work</h4><p>A certified workplace whose culture of care extends to every home it builds.</p></div><div class="cell"><h4>Buy now, pay later</h4><p>20:80 schemes and no pre-EMI for 15 months at Dosti West County.</p></div><div class="cell"><h4>Senior living pioneer</h4><p>Dosti Primus in Thane, designed around a community of care.</p></div><div class="cell"><h4>Infrastructure upside</h4><p>Metro Line 5, twin tunnel and coastal road corridors around Balkum and Wagle Estate.</p></div></div>
 </div></section>
+<section class="spot">
+  <div class="im"><img src="img/13.jpg" alt="One Dosti"/></div>
+  <div class="bd">
+    <p class="k">Featured project</p>
+    <h3>One Dosti</h3>
+    <p class="mt">Flagship destination</p>
+    <p>The flagship that carries four and a half decades of Dosti trust into its next chapter.</p>
+    <div class="specs"><div><b>Flagship</b><i>The next Dosti landmark</i></div><div><b>MMR</b><i>Mumbai Metropolitan Region</i></div><div><b>New launch</b><i>Now unveiling</i></div></div>
+  </div>
+</section>
 <section class="sect" id="portfolio">
   <div class="phead"><div><p class="k">Portfolio</p><h2 class="st">Signature <em>addresses.</em></h2></div><a class="btn dark" href="#contact">Enquire about a project</a></div>
-  <div class="pgrid"><a class="pc" href="#contact"><span class="im"><img loading="lazy" src="img/13.jpg" alt="One Dosti"/></span><span class="bd"><h3>One Dosti</h3><p>Flagship destination</p></span></a><a class="pc" href="#contact"><span class="im"><img loading="lazy" src="img/12.jpg" alt="Dosti West County"/></span><span class="bd"><h3>Dosti West County</h3><p>Balkum, Thane</p></span></a><a class="pc" href="#contact"><span class="im"><img loading="lazy" src="img/02.jpg" alt="Dosti Greater Thane"/></span><span class="bd"><h3>Dosti Greater Thane</h3><p>Smart homes township</p></span></a><a class="pc" href="#contact"><span class="im"><img loading="lazy" src="img/00.jpg" alt="Dosti 604"/></span><span class="bd"><h3>Dosti 604</h3><p>Wagle Estate, Thane</p></span></a><a class="pc" href="#contact"><span class="im"><img loading="lazy" src="img/02.jpg" alt="Dosti Primus"/></span><span class="bd"><h3>Dosti Primus</h3><p>Senior living · Thane</p></span></a><a class="pc" href="#contact"><span class="im"><img loading="lazy" src="img/00.jpg" alt="Dosti in Pune"/></span><span class="bd"><h3>Dosti in Pune</h3><p>Growth corridor</p></span></a></div>
+  <div class="pgrid"><a class="pc" href="#contact"><span class="im"><img loading="lazy" src="img/02.jpg" alt="Dosti West County"/></span><span class="bd"><h3>Dosti West County</h3><p>Balkum, Thane</p></span></a><a class="pc txt" href="#contact"><span><h3>Dosti Greater Thane</h3><p>Smart homes township</p></span><span class="arrow">→</span></a><a class="pc txt" href="#contact"><span><h3>Dosti 604</h3><p>Wagle Estate, Thane</p></span><span class="arrow">→</span></a><a class="pc txt" href="#contact"><span><h3>Dosti Primus</h3><p>Senior living · Thane</p></span><span class="arrow">→</span></a><a class="pc txt" href="#contact"><span><h3>Dosti Eastern Bay</h3><p>Mumbai</p></span><span class="arrow">→</span></a><a class="pc txt" href="#contact"><span><h3>Dosti in Pune</h3><p>Growth corridor</p></span><span class="arrow">→</span></a></div>
   
   
 </section>
-<section class="gal"><figure><img loading="lazy" src="img/13.jpg" alt="DOSTI"/></figure><figure><img loading="lazy" src="img/02.jpg" alt="DOSTI"/></figure><figure><img loading="lazy" src="img/00.jpg" alt="DOSTI"/></figure><figure><img loading="lazy" src="img/12.jpg" alt="DOSTI"/></figure></section>
-<section class="sect news" id="news"><div class="in">
-  <p class="k">News &amp; updates</p>
-  <div class="nrow"><span class="d">15 Mar 26</span><span class="t">Dosti 604, Wagle Estate: premium living in Thane's growth hub</span></div><div class="nrow"><span class="d">28 Feb 26</span><span class="t">Living where the city works: a new residential opportunity in Wagle Estate</span></div><div class="nrow"><span class="d">16 Feb 26</span><span class="t">Metro Line 5, twin tunnel and coastal road: what they mean for property prices in Balkum</span></div><div class="nrow"><span class="d">24 Jan 26</span><span class="t">Smart homes, strategic location: what makes Dosti Greater Thane a wise investment</span></div><div class="nrow"><span class="d">13 Jan 26</span><span class="t">Buy now, pay later homes in Thane: 20:80 and no pre-EMI for 15 months at Dosti West County</span></div>
-</div></section>
-<section class="loc" id="locations">
+<section class="gal" style="--gc:1"><figure><img loading="lazy" src="img/90.jpg" alt="One Dosti: a gateway to Balkum, Thane"/><figcaption>One Dosti: a gateway to Balkum, Thane</figcaption></figure></section>
+<section class="sect news" id="news"><div class="in"><p class="k">News & updates</p><div class="nrow"><span class="d">15 Mar 26</span><span class="t">Dosti 604, Wagle Estate: premium living in Thane's growth hub</span></div><div class="nrow"><span class="d">28 Feb 26</span><span class="t">Living where the city works: a new residential opportunity in Wagle Estate</span></div><div class="nrow"><span class="d">16 Feb 26</span><span class="t">Metro Line 5, twin tunnel and coastal road: what they mean for property prices in Balkum</span></div><div class="nrow"><span class="d">24 Jan 26</span><span class="t">Smart homes, strategic location: what makes Dosti Greater Thane a wise investment</span></div><div class="nrow"><span class="d">13 Jan 26</span><span class="t">Buy now, pay later homes in Thane: 20:80 and no pre-EMI for 15 months at Dosti West County</span></div></div></section>
+
+<section class="loc" id="locations" style="padding-top:92px">
   <p class="k">Where we build</p>
   <div class="cloud"><div class="tags"><span>Mumbai</span><span>Thane</span><span>Balkum</span><span>Wagle Estate</span><span>Greater Thane</span><span>Pune</span></div></div>
 </section>
@@ -177,7 +222,7 @@ h1{font-size:clamp(30px,8vw,44px)}
     <form class="cf" onsubmit="return false">
       <label><span>Name</span><input type="text" placeholder="Your full name"/></label>
       <label><span>Phone</span><input type="tel" placeholder="+"/></label>
-      <label><span>Interest</span><select><option>One Dosti</option><option>Dosti West County</option><option>Dosti Greater Thane</option><option>Dosti 604</option><option>Dosti Primus</option><option>Dosti in Pune</option></select></label>
+      <label><span>Interest</span><select><option>One Dosti</option><option>Dosti West County</option><option>Dosti Greater Thane</option><option>Dosti 604</option><option>Dosti Primus</option><option>Dosti Eastern Bay</option><option>Dosti in Pune</option></select></label>
       <button class="btn light" type="submit">Get in touch</button>
     </form>
   </div>
@@ -204,7 +249,7 @@ tl.to(".pre b",{y:0,duration:.7,ease:"power3.out",delay:.15})
 .to("#pre",{yPercent:-100,duration:.9,ease:"power4.inOut",delay:.15})
 .set("#pre",{display:"none"})
 .from(".hero .media img",{scale:1.24,duration:2,ease:"power2.out"},"-=.9")
-.to("h1 .l>span",{y:0,duration:1,stagger:.1,ease:"power3.out"},"-=1.8")
+.to("h1 .l>span",{y:0,duration:1,ease:"power3.out"},"-=1.8")
 .from(".hero .sub,.hero .acts",{opacity:0,y:18,duration:.7,stagger:.12},"-=1.2")
 .from(".hero .hstats div",{opacity:0,y:16,duration:.5,stagger:.06},"-=.8")
 .from(".nav",{opacity:0,y:-12,duration:.6},"-=.7");
@@ -213,7 +258,8 @@ ScrollTrigger.create({start:"top -60",onUpdate:s=>document.getElementById("nav")
 const m=document.getElementById("mst");
 m.innerHTML=m.textContent.trim().split(/\s+/).map(w=>'<span class="w">'+w+"</span>").join(" ");
 gsap.to("#mst .w",{opacity:1,stagger:.05,ease:"none",scrollTrigger:{trigger:"#mst",start:"top 80%",end:"bottom 50%",scrub:.4}});
-[".k",".st",".man p",".why .cell",".pc",".gal figure",".nrow",".cloud .tags span",".groups .g",".contact h2",".cf",".cinfo .cell"].forEach(s=>{gsap.utils.toArray(s).forEach((e,i)=>{gsap.from(e,{opacity:0,y:28,duration:.8,delay:(i%6)*.04,ease:"power3.out",scrollTrigger:{trigger:e,start:"top 94%"}})})});
+gsap.utils.toArray(".spot .im img").forEach(im=>{gsap.fromTo(im,{yPercent:-6,scale:1.12},{yPercent:6,scale:1.12,ease:"none",scrollTrigger:{trigger:im.closest(".spot"),start:"top bottom",end:"bottom top",scrub:true}})});
+[".k",".st",".man p",".orow",".why .cell",".spot h3",".spot .specs div",".pc",".gal figure",".nrow",".lead .cell",".cloud .tags span",".groups .g",".contact h2",".cf",".cinfo .cell"].forEach(s=>{gsap.utils.toArray(s).forEach((e,i)=>{gsap.from(e,{opacity:0,y:26,duration:.8,delay:(i%6)*.04,ease:"power3.out",scrollTrigger:{trigger:e,start:"top 94%"}})})});
 document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",e=>{const t=document.querySelector(a.getAttribute("href"));if(t){e.preventDefault();lenis.scrollTo(t,{duration:1.2,offset:-40})}})});
 </script>
 </body>
