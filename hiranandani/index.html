@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="robots" content="noindex, nofollow"/>
+<title>Hiranandani | Creating Better Communities</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Archivo:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root{--ink:#101314;--ivory:#f2efe7;--ivory-deep:#e9e4d8;--accent:#a8865c;--line:rgba(16,19,20,.14);--line-l:rgba(242,239,231,.18);--serif:"Marcellus",serif;--si:"Cormorant Garamond",serif;--sans:"Archivo",sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:var(--ivory);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}ul{list-style:none}
+em{font-family:var(--si);font-style:italic;font-weight:500}
+.pre{position:fixed;inset:0;z-index:100;background:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px}
+.pre b{font-family:var(--serif);font-weight:400;font-size:44px;color:var(--ivory);letter-spacing:.3em;transform:translateY(120%);display:block}
+.pre i{width:120px;height:1px;background:var(--line-l);overflow:hidden;display:block}
+.pre i s{display:block;width:100%;height:100%;background:var(--accent);transform:scaleX(0);transform-origin:left}
+.pre span{overflow:hidden;display:block}
+.nav{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:24px 44px;color:var(--ivory);transition:.45s}
+.nav.on{background:rgba(242,239,231,.93);backdrop-filter:blur(14px);color:var(--ink);padding:13px 44px;box-shadow:0 1px 0 var(--line)}
+.nav b{font-family:var(--serif);font-weight:400;font-size:20px;letter-spacing:.16em}.nav b span{color:var(--accent)}
+.nav a.cta{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;border:1px solid currentColor;padding:11px 24px;border-radius:999px;transition:.35s;white-space:nowrap}
+.nav a.cta:hover{background:var(--accent);border-color:var(--accent);color:var(--ivory)}
+.hero{position:relative;height:100svh;min-height:620px;overflow:hidden;color:var(--ivory)}
+.hero .media{position:absolute;inset:0}.hero .media img{width:100%;height:100%;object-fit:cover;transform:scale(1.12)}
+.hero .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,19,20,.6),rgba(16,19,20,.42) 45%,rgba(16,19,20,.8))}
+.hero .c{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 22px}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(30px,6.8vw,104px);line-height:1.06}
+h1 .l{display:block;overflow:hidden}h1 .l>span{display:inline-block;transform:translateY(112%)}
+h1 em{color:var(--accent);font-size:1.24em;line-height:1}
+.sub{margin-top:26px;font-size:15px;font-weight:300;max-width:520px;opacity:.92;line-height:1.75;overflow:hidden}.sub>span{display:inline-block;transform:translateY(120%)}
+.acts{margin-top:40px;display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;padding:16px 34px;border-radius:999px;transition:.4s}
+.btn.light{background:var(--ivory);color:var(--ink)}.btn.light:hover{background:var(--accent);color:var(--ivory)}
+.btn.ghost{border:1px solid rgba(242,239,231,.55);color:var(--ivory)}.btn.ghost:hover{background:rgba(242,239,231,.14)}
+.foot{position:absolute;z-index:2;left:0;right:0;bottom:0;display:flex;align-items:center;gap:44px;padding:22px 44px;border-top:1px solid var(--line-l)}
+.foot b{font-family:var(--serif);font-weight:400;font-size:24px;display:block}.foot i{font-style:normal;font-size:9px;letter-spacing:.22em;text-transform:uppercase;opacity:.75;display:block;margin-top:2px}
+.foot .sc{margin-left:auto;font-size:9px;letter-spacing:.3em;text-transform:uppercase;opacity:.8;display:flex;align-items:center;gap:12px}
+.foot .sc s{display:block;width:1px;height:38px;background:var(--ivory);position:relative;overflow:hidden;text-decoration:none}
+.foot .sc s:after{content:"";position:absolute;inset:0;background:var(--accent);animation:sp 2.2s cubic-bezier(.65,0,.35,1) infinite}
+@keyframes sp{0%{transform:translateY(-100%)}55%{transform:translateY(0)}100%{transform:translateY(100%)}}
+.mq{background:var(--ink);color:var(--ivory);overflow:hidden;padding:20px 0}
+.mq .t{display:flex;align-items:center;gap:40px;width:max-content;animation:mq 34s linear infinite}
+.mq span{font-family:var(--serif);font-size:18px;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap}
+.mq i{color:var(--accent);font-style:normal;font-size:11px}
+@keyframes mq{to{transform:translateX(-50%)}}
+.man{padding:130px 44px 110px;max-width:1200px;margin:0 auto}
+.k{font-size:10px;letter-spacing:.32em;text-transform:uppercase;font-weight:600;color:var(--accent);margin-bottom:30px}
+.man h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.8vw,54px);line-height:1.24;max-width:980px}
+.man h2 .w{opacity:.14;transition:opacity .5s}
+.man .row{margin-top:56px;display:flex;align-items:flex-end;justify-content:space-between;gap:44px;flex-wrap:wrap}
+.man p{max-width:560px;font-size:15px;font-weight:300;line-height:1.85;color:rgba(16,19,20,.78)}
+.stats{display:flex;gap:52px;flex-wrap:wrap}
+.stats b{font-family:var(--serif);font-size:34px;font-weight:400;display:block}
+.stats i{font-style:normal;font-size:9px;letter-spacing:.24em;text-transform:uppercase;opacity:.6}
+.port{padding:20px 0 120px}
+.port .head{padding:0 44px 54px;display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.st{font-family:var(--serif);font-size:clamp(36px,4.4vw,62px);line-height:1.08;font-weight:400}
+.st em{font-size:1.18em;line-height:1}
+.pr{display:grid;grid-template-columns:52px 200px 1fr auto;align-items:center;gap:32px;padding:24px 44px;border-top:1px solid var(--line);cursor:pointer;transition:.5s}
+.pr:last-child{border-bottom:1px solid var(--line)}
+.pr:hover{background:var(--ink);color:var(--ivory)}
+.pr .n{font-size:11px;letter-spacing:.2em;color:var(--accent);font-weight:600}
+.pr .th{overflow:hidden;aspect-ratio:16/10;border-radius:2px;display:block}
+.pr .th img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.22,1,.36,1)}
+.pr:hover .th img{transform:scale(1.13) rotate(-1.5deg)}
+.pr .nm{font-family:var(--serif);font-size:clamp(22px,2.4vw,36px);transition:transform .5s cubic-bezier(.22,1,.36,1);position:relative}
+.pr .nm:after{content:"→";position:absolute;margin-left:16px;color:var(--accent);opacity:0;transform:translateX(-12px);transition:.45s}
+.pr:hover .nm{transform:translateX(10px)}.pr:hover .nm:after{opacity:1;transform:translateX(0)}
+.pr .mt{font-size:11px;letter-spacing:.16em;text-transform:uppercase;opacity:.6}
+.gal{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;padding:0 44px 120px}
+.gal figure{overflow:hidden;margin:0}
+.gal img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;transition:transform 1s cubic-bezier(.22,1,.36,1)}
+.gal figure:hover img{transform:scale(1.06)}
+.gal figure:first-child{grid-row:span 2}.gal figure:first-child img{aspect-ratio:auto;height:100%}
+.cta{background:var(--ink);color:var(--ivory);display:flex;justify-content:space-between;align-items:center;gap:36px;flex-wrap:wrap;padding:84px 44px}
+.cta h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.6vw,50px);line-height:1.12}
+.ftr{background:var(--ink);color:var(--ivory);padding:0 44px 34px}
+.ftr .in{border-top:1px solid var(--line-l);padding-top:26px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:11px;letter-spacing:.06em;opacity:.65}
+@media(max-width:860px){
+.nav{padding:18px 20px}.nav.on{padding:11px 20px}
+.man{padding:96px 20px 80px}.port .head,.gal{padding-left:20px;padding-right:20px}
+.pr{grid-template-columns:96px 1fr;gap:6px 16px;padding:20px}
+.pr .n{display:none}.pr .th{grid-row:span 2}.pr .mt{grid-column:2}
+.gal{grid-template-columns:1fr 1fr}
+.foot{gap:22px;padding:18px 20px}.foot b{font-size:18px}.foot i{font-size:7.5px;letter-spacing:.16em}
+.foot .sc{display:none}
+.cta{padding:64px 20px}.stats{gap:30px}
+h1{font-size:clamp(26px,7.6vw,104px)}
+}
+</style>
+</head>
+<body>
+<div class="pre" id="pre"><span><b>HIRANANDANI</b></span><i><s></s></i></div>
+<header class="nav" id="nav"><b>HIRANANDANI</b><a class="cta" href="#contact">Get in touch</a></header>
+<main>
+<section class="hero">
+  <div class="media"><img src="img/02.jpg" alt="HIRANANDANI"/></div>
+  <div class="scrim"></div>
+  <div class="c">
+    <h1><span class="l"><span>Creating better</span></span><span class="l"><span><em>communities</em></span></span></h1>
+    <p class="sub"><span>Since 1978, the townships that taught India what a neighbourhood could be.</span></p>
+    <div class="acts"><a class="btn light" href="#portfolio">Explore projects</a><a class="btn ghost" href="#contact">Get in touch</a></div>
+  </div>
+  <div class="foot">
+    <div><b>1978</b><i>Established</i></div><div><b>2</b><i>Iconic townships</i></div><div><b>45+</b><i>Years of legacy</i></div>
+    <div class="sc"><s></s>Scroll</div>
+  </div>
+</section>
+<div class="mq"><div class="t"><span>Hiranandani Gardens</span><i>✦</i><span>Atlantis</span><i>✦</i><span>Regent Hill</span><i>✦</i><span>Castle Rock</span><i>✦</i><span>Hiranandani Estate</span><i>✦</i><span>Hiranandani Gardens</span><i>✦</i><span>Atlantis</span><i>✦</i><span>Regent Hill</span><i>✦</i><span>Castle Rock</span><i>✦</i><span>Hiranandani Estate</span><i>✦</i></div></div>
+<section class="man">
+  <p class="k">Powai · Thane · Mumbai</p>
+  <h2 id="mst">A skyline is easy. A community that endures for generations is the real architecture.</h2>
+  <div class="row"><p>Established in 1978, Hiranandani Group is one of the most prestigious real estate developers based in Mumbai, with the vision of creating a new India with self-sufficient and enduring townships, across real estate, education, healthcare, hospitality and leisure.</p><div class="stats"><div><b>1978</b><i>Established</i></div><div><b>2</b><i>Iconic townships</i></div><div><b>45+</b><i>Years of legacy</i></div></div></div>
+</section>
+<section class="port" id="portfolio">
+  <div class="head"><p class="k">Portfolio</p><h2 class="st">Signature<br/><em>addresses.</em></h2></div>
+  <ul><li class="pr"><span class="n">01</span><span class="th"><img loading="lazy" src="img/02.jpg" alt="Hiranandani Gardens"/></span><span class="nm">Hiranandani Gardens</span><span class="mt">Powai · Mumbai</span></li><li class="pr"><span class="n">02</span><span class="th"><img loading="lazy" src="img/03.jpg" alt="Atlantis"/></span><span class="nm">Atlantis</span><span class="mt">Powai</span></li><li class="pr"><span class="n">03</span><span class="th"><img loading="lazy" src="img/04.jpg" alt="Regent Hill"/></span><span class="nm">Regent Hill</span><span class="mt">Powai</span></li><li class="pr"><span class="n">04</span><span class="th"><img loading="lazy" src="img/05.jpg" alt="Castle Rock"/></span><span class="nm">Castle Rock</span><span class="mt">Powai</span></li><li class="pr"><span class="n">05</span><span class="th"><img loading="lazy" src="img/01.jpg" alt="Hiranandani Estate"/></span><span class="nm">Hiranandani Estate</span><span class="mt">Thane</span></li></ul>
+</section>
+<section class="gal"><figure><img loading="lazy" src="img/01.jpg" alt="HIRANANDANI"/></figure><figure><img loading="lazy" src="img/03.jpg" alt="HIRANANDANI"/></figure><figure><img loading="lazy" src="img/04.jpg" alt="HIRANANDANI"/></figure><figure><img loading="lazy" src="img/05.jpg" alt="HIRANANDANI"/></figure></section>
+<section class="cta" id="contact"><div><p class="k">Enquire</p><h2>Arrange a private<br/>viewing</h2></div><a class="btn light" href="https://hiranandani.com" target="_blank" rel="noopener">Get in touch</a></section>
+</main>
+<footer class="ftr"><div class="in"><span>HIRANANDANI · Powai · Thane · Mumbai</span><span>Independent design concept by Raghav Dua. All content and imagery belong to Hiranandani.</span></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script>
+gsap.registerPlugin(ScrollTrigger);
+if("scrollRestoration" in history)history.scrollRestoration="manual";window.scrollTo(0,0);
+const lenis=new Lenis({lerp:.09});lenis.on("scroll",ScrollTrigger.update);
+gsap.ticker.add(t=>lenis.raf(t*1000));gsap.ticker.lagSmoothing(0);
+const tl=gsap.timeline();
+tl.to(".pre b",{y:0,duration:.7,ease:"power3.out",delay:.15})
+.to(".pre s",{scaleX:1,duration:.6,ease:"power2.inOut"},"-=.25")
+.to("#pre",{yPercent:-100,duration:.9,ease:"power4.inOut",delay:.15})
+.set("#pre",{display:"none"})
+.from(".hero .media img",{scale:1.26,duration:2.2,ease:"power2.out"},"-=.9")
+.to("h1 .l>span",{y:0,duration:1.05,stagger:.12,ease:"power3.out"},"-=2")
+.to(".sub>span",{y:0,duration:.9,ease:"power3.out"},"-=1.6")
+.from(".acts .btn",{opacity:0,y:16,duration:.6,stagger:.1},"-=1.1")
+.from(".foot",{opacity:0,duration:.7},"-=.7")
+.from(".nav",{opacity:0,y:-12,duration:.6},"-=.7");
+gsap.to(".hero .media img",{scale:1.2,ease:"none",scrollTrigger:{trigger:".hero",start:"top top",end:"bottom top",scrub:true}});
+ScrollTrigger.create({start:"top -80",onUpdate:s=>document.getElementById("nav").classList.toggle("on",s.scroll()>80)});
+const m=document.getElementById("mst");
+m.innerHTML=m.textContent.trim().split(/\s+/).map(w=>'<span class="w">'+w+"</span>").join(" ");
+gsap.to("#mst .w",{opacity:1,stagger:.06,ease:"none",scrollTrigger:{trigger:"#mst",start:"top 78%",end:"bottom 45%",scrub:.4}});
+[".k",".st",".man p",".stats div",".pr",".gal figure",".cta h2"].forEach(s=>{gsap.utils.toArray(s).forEach(e=>{gsap.from(e,{opacity:0,y:36,duration:.9,ease:"power3.out",scrollTrigger:{trigger:e,start:"top 92%"}})})});
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",e=>{const t=document.querySelector(a.getAttribute("href"));if(t){e.preventDefault();lenis.scrollTo(t,{duration:1.3})}})});
+</script>
+</body>
+</html>
