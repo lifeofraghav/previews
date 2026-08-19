@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="robots" content="noindex, nofollow"/>
+<title>Radiance Realty | South India's Iconic Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Archivo:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root{--ink:#101314;--ink2:#1a1f21;--ivory:#f2efe7;--ivory-d:#e9e4d8;--accent:#4a6d8f;--line:rgba(16,19,20,.14);--line-l:rgba(242,239,231,.18);--serif:"Marcellus",serif;--si:"Cormorant Garamond",serif;--sans:"Archivo",sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:var(--ivory);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}ul{list-style:none}
+em{font-family:var(--si);font-style:italic;font-weight:500;color:var(--accent);font-size:1.18em;line-height:1}
+.pre{position:fixed;inset:0;z-index:100;background:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px}
+.pre b{font-family:var(--serif);font-weight:400;font-size:40px;color:var(--ivory);letter-spacing:.3em;transform:translateY(120%);display:block}
+.pre i{width:120px;height:1px;background:var(--line-l);overflow:hidden;display:block}
+.pre i s{display:block;width:100%;height:100%;background:var(--accent);transform:scaleX(0);transform-origin:left}
+.pre span{overflow:hidden;display:block}
+.nav{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px 40px;color:var(--ivory);transition:.45s;background:var(--ink)}
+.nav.on{background:rgba(242,239,231,.94);backdrop-filter:blur(14px);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.nav b{font-family:var(--serif);font-weight:400;font-size:19px;letter-spacing:.15em;white-space:nowrap}.nav b span{color:var(--accent)}
+.nav .lk{display:flex;gap:24px}
+.nav .lk a{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;opacity:.85}
+.nav .lk a:hover{opacity:1;color:var(--accent)}
+.nav a.cta{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;border:1px solid currentColor;padding:10px 22px;border-radius:999px;transition:.35s;white-space:nowrap}
+.nav a.cta:hover{background:var(--accent);border-color:var(--accent);color:var(--ivory)}
+.hero{display:grid;grid-template-columns:46fr 54fr;min-height:100svh}
+.hero .panel{background:var(--ink);color:var(--ivory);display:flex;flex-direction:column;justify-content:center;padding:130px 56px 40px}
+.hero .k{font-size:10px;letter-spacing:.3em;text-transform:uppercase;font-weight:600;color:var(--accent);margin-bottom:26px}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(34px,3.6vw,58px);line-height:1.12}
+h1 .l{display:block;overflow:hidden}h1 .l>span{display:block;transform:translateY(112%)}
+.hero .sub{margin-top:24px;font-size:14.5px;font-weight:300;max-width:460px;opacity:.85;line-height:1.8}
+.hero .acts{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;padding:15px 30px;border-radius:999px;transition:.4s;border:none;cursor:pointer;font-family:var(--sans)}
+.btn.light{background:var(--ivory);color:var(--ink)}.btn.light:hover{background:var(--accent);color:var(--ivory)}
+.btn.ghost{border:1px solid rgba(242,239,231,.5);color:var(--ivory);background:none}.btn.ghost:hover{background:rgba(242,239,231,.14)}
+.btn.dark{background:var(--ink);color:var(--ivory)}.btn.dark:hover{background:var(--accent)}
+.hero .hstats{margin-top:52px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-l);border:1px solid var(--line-l)}
+.hero .hstats div{background:var(--ink);padding:16px 14px}
+.hero .hstats b{font-family:var(--serif);font-weight:400;font-size:21px;display:block}
+.hero .hstats i{font-style:normal;font-size:8px;letter-spacing:.16em;text-transform:uppercase;opacity:.65;display:block;margin-top:3px}
+.hero .media{position:relative;overflow:hidden;min-height:52vh}
+.hero .media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.1)}
+.hero .media .tag{position:absolute;left:26px;bottom:22px;z-index:2;color:var(--ivory);font-size:10px;letter-spacing:.18em;text-transform:uppercase;background:rgba(16,19,20,.6);backdrop-filter:blur(6px);padding:10px 16px;border-radius:999px;max-width:80%}
+.mq{background:var(--ink2);color:var(--ivory);overflow:hidden;padding:16px 0;border-top:1px solid var(--line-l)}
+.mq .t{display:flex;align-items:center;gap:36px;width:max-content;animation:mq 40s linear infinite}
+.mq span{font-family:var(--serif);font-size:15px;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap}
+.mq i{color:var(--accent);font-style:normal;font-size:10px}
+@keyframes mq{to{transform:translateX(-50%)}}
+.k{font-size:10px;letter-spacing:.3em;text-transform:uppercase;font-weight:600;color:var(--accent);margin-bottom:24px}
+.sect{padding:92px 40px;max-width:1280px;margin:0 auto}
+.man h2{font-family:var(--serif);font-weight:400;font-size:clamp(26px,3.2vw,46px);line-height:1.26;max-width:920px}
+.man h2 .w{opacity:.14;transition:opacity .5s}
+.man .cols{margin-top:44px;display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.man p{font-size:14.5px;font-weight:300;line-height:1.85;color:rgba(16,19,20,.8)}
+.off{max-width:none;background:var(--ivory-d)}
+.off .in{max-width:1280px;margin:0 auto}
+.orow{display:grid;grid-template-columns:56px 260px 1fr;gap:28px;align-items:baseline;padding:24px 4px;border-top:1px solid var(--line)}
+.orow:last-child{border-bottom:1px solid var(--line)}
+.orow .n{font-size:11px;letter-spacing:.2em;color:var(--accent);font-weight:600}
+.orow h4{font-family:var(--serif);font-weight:400;font-size:21px}
+.orow p{font-size:13.5px;font-weight:300;line-height:1.7;opacity:.75}
+.why{background:var(--ink);color:var(--ivory);max-width:none}
+.why .in{max-width:1280px;margin:0 auto}
+.why .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-l);border:1px solid var(--line-l)}
+.why .cell{background:var(--ink);padding:30px 26px}
+.why h4{font-family:var(--serif);font-weight:400;font-size:19px;color:var(--accent);margin-bottom:12px}
+.why p{font-size:12.5px;font-weight:300;line-height:1.75;opacity:.78}
+.st{font-family:var(--serif);font-size:clamp(30px,3.6vw,52px);line-height:1.1;font-weight:400}
+.spot{display:grid;grid-template-columns:1.1fr 1fr;max-width:none;padding:0;min-height:78vh}
+.spot .im{overflow:hidden;position:relative}
+.spot .im img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.spot .bd{background:var(--ink2);color:var(--ivory);display:flex;flex-direction:column;justify-content:center;padding:80px 64px}
+.spot h3{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.4vw,50px);margin-bottom:8px}
+.spot .mt{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:24px}
+.spot p{font-size:14.5px;font-weight:300;line-height:1.8;opacity:.85;max-width:440px;margin-bottom:38px}
+.spot .specs{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-l);border:1px solid var(--line-l)}
+.spot .specs div{background:var(--ink2);padding:18px 16px}
+.spot .specs b{font-family:var(--serif);font-weight:400;font-size:17px;display:block;margin-bottom:5px}
+.spot .specs i{font-style:normal;font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;opacity:.65;line-height:1.5;display:block}
+.phead{display:flex;justify-content:space-between;align-items:flex-end;gap:26px;flex-wrap:wrap;margin-bottom:44px}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pc{background:var(--ivory-d);overflow:hidden;display:block}
+.pc .im{overflow:hidden;aspect-ratio:16/10}
+.pc .im img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.22,1,.36,1)}
+.pc:hover .im img{transform:scale(1.08)}
+.pc .bd{padding:18px 20px 22px}
+.pc h3{font-family:var(--serif);font-weight:400;font-size:21px;margin-bottom:5px}
+.pc p{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;opacity:.6}
+.pc.txt{background:var(--ink);color:var(--ivory);aspect-ratio:auto;display:flex;flex-direction:column;justify-content:space-between;padding:26px 24px;min-height:230px;transition:background .4s}
+.pc.txt:hover{background:var(--ink2)}
+.pc.txt h3{font-size:24px}
+.pc.txt .arrow{color:var(--accent);font-size:18px;transition:transform .4s}
+.pc.txt:hover .arrow{transform:translateX(6px)}
+.pc.txt p{opacity:.55}
+.cloud{margin-top:44px}
+.cloud h5{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:18px}
+.cloud .tags{display:flex;flex-wrap:wrap;gap:9px}
+.cloud .tags span{font-size:11px;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:9px 16px;transition:.3s;cursor:default}
+.cloud .tags span:hover{background:var(--ink);color:var(--ivory);border-color:var(--ink)}
+.gal{display:grid;grid-template-columns:repeat(var(--gc,4),1fr);gap:14px;padding:0 40px 92px;max-width:1280px;margin:0 auto}
+.gal figure{overflow:hidden;margin:0;position:relative}
+.gal img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3.2;transition:transform 1s cubic-bezier(.22,1,.36,1)}
+.gal figure:hover img{transform:scale(1.06)}
+.gal figcaption{position:absolute;inset:auto 0 0 0;padding:36px 16px 13px;font-size:11px;letter-spacing:.04em;color:var(--ivory);background:linear-gradient(180deg,transparent,rgba(16,19,20,.82))}
+.news{background:var(--ivory-d);max-width:none}
+.news .in{max-width:1280px;margin:0 auto}
+.nrow{display:grid;grid-template-columns:130px 1fr;gap:26px;align-items:baseline;padding:19px 4px;border-top:1px solid var(--line)}
+.nrow:last-child{border-bottom:1px solid var(--line)}
+.nrow .d{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.nrow .t{font-family:var(--serif);font-size:17px;line-height:1.4}
+.loc{padding:0 40px 92px;max-width:1280px;margin:0 auto}
+.contact{background:var(--ink);color:var(--ivory);max-width:none}
+.contact .in{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:64px}
+.contact h2{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3.4vw,46px);line-height:1.12;margin-bottom:30px}
+.cf label{display:block;margin-bottom:20px}
+.cf span{display:block;font-size:9px;letter-spacing:.24em;text-transform:uppercase;font-weight:600;opacity:.6;margin-bottom:8px}
+.cf input,.cf select{width:100%;border:none;border-bottom:1px solid var(--line-l);background:transparent;color:var(--ivory);font-family:var(--sans);font-size:15px;padding:9px 0;outline:none;border-radius:0}
+.cf input:focus{border-color:var(--accent)}
+.cinfo .cell{padding:20px 0;border-top:1px solid var(--line-l)}
+.cinfo h5{font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:8px}
+.cinfo p,.cinfo a{font-size:14px;font-weight:300;line-height:1.7;opacity:.85;display:block}
+.cinfo a:hover{color:var(--accent)}
+.ftr{background:var(--ink);color:var(--ivory);padding:0 40px 30px}
+.ftr .in{max-width:1280px;margin:0 auto;border-top:1px solid var(--line-l);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:10.5px;letter-spacing:.05em;opacity:.6}
+@media(max-width:1020px){
+.hero,.spot{grid-template-columns:1fr}
+.hero .panel{padding:110px 24px 44px}
+.hero .media{min-height:44vh}.spot .im{min-height:44vh}
+.spot .bd{padding:64px 24px}
+.why .grid,.pgrid,.groups,.lead .row{grid-template-columns:1fr 1fr}
+.man .cols,.contact .in{grid-template-columns:1fr;gap:30px}
+.gal{grid-template-columns:1fr 1fr !important}
+.nav .lk{display:none}
+.orow{grid-template-columns:40px 1fr;gap:10px 16px}.orow p{grid-column:2}
+}
+@media(max-width:620px){
+.nav{padding:14px 18px}
+.sect{padding:70px 18px}.gal,.loc{padding-left:18px;padding-right:18px}
+.why .grid,.pgrid,.groups,.gal,.lead .row{grid-template-columns:1fr !important}
+.hero .hstats{grid-template-columns:1fr 1fr}
+.spot .specs{grid-template-columns:1fr}
+.nrow{grid-template-columns:1fr;gap:6px}
+h1{font-size:clamp(30px,8vw,44px)}
+}
+</style>
+</head>
+<body>
+<div class="pre" id="pre"><span><b>RADIANCE</b></span><i><s></s></i></div>
+<header class="nav" id="nav">
+  <b>RADIANCE&nbsp;<span>REALTY</span></b>
+  <nav class="lk"><a href="#about">About</a><a href="#offerings">What we build</a><a href="#why">Why Radiance</a><a href="#portfolio">Projects</a><a href="#locations">Locations</a></nav>
+  <a class="cta" href="#contact">Get in touch</a>
+</header>
+<main>
+<section class="hero">
+  <div class="panel">
+    <p class="k">Chennai · Coimbatore</p>
+    <h1><span class="l"><span>Engineered for <em>on-time</em> delivery.</span></span></h1>
+    <p class="sub">77+ years of engineering excellence, 7 million+ sq ft delivered, 44+ landmark projects, and a delivery record with zero delays and zero excuses.</p>
+    <div class="acts"><a class="btn light" href="#portfolio">Explore projects</a><a class="btn ghost" href="#contact">Get in touch</a></div>
+    <div class="hstats"><div><b>77+</b><i>Years of engineering</i></div><div><b>7 M+</b><i>Sq ft delivered</i></div><div><b>44+</b><i>Landmark projects</i></div><div><b>0</b><i>Delivery delays</i></div></div>
+  </div>
+  <div class="media"><img src="img/69.jpg" alt="RADIANCE"/><span class="tag">Radiance Eternity · Thoraipakkam, Chennai</span></div>
+</section>
+<div class="mq"><div class="t"><span>Radiance Eternity</span><i>✦</i><span>Radiance Solitaire</span><i>✦</i><span>Radiance Riverwoods</span><i>✦</i><span>Radiance Imperia</span><i>✦</i><span>Radiance The Pride</span><i>✦</i><span>Radiance Suprema</span><i>✦</i><span>Radiance Edgewood</span><i>✦</i><span>Radiance Eternity</span><i>✦</i><span>Radiance Solitaire</span><i>✦</i><span>Radiance Riverwoods</span><i>✦</i><span>Radiance Imperia</span><i>✦</i><span>Radiance The Pride</span><i>✦</i><span>Radiance Suprema</span><i>✦</i><span>Radiance Edgewood</span><i>✦</i></div></div>
+<section class="sect man" id="about">
+  <p class="k">About Radiance</p>
+  <h2 id="mst">In this house, a handover date is not a hope. It is an engineering specification.</h2>
+  <div class="cols"><p>Radiance Realty, headquartered in Chennai, is a leading force in South India's real estate sector, recognised for delivering technically advanced, environmentally responsible and investment-grade residential developments, from Navalur villas to Madhavaram high-rises.</p><p>Delivery schedules are treated as non-negotiable engineering benchmarks, and every project passes a multi-tiered, digitally logged inspection process of over 50,000 quality validation points, from concrete strength testing to advanced MEP audits.</p></div>
+</section>
+<section class="sect off" id="offerings"><div class="in">
+  <p class="k">What we build</p>
+  <div class="orow"><span class="n">01</span><h4>Apartments</h4><p>From Solitaire's 660 homes in Madhavaram to Eternity's 2 to 5 BHKs on Thoraipakkam.</p></div><div class="orow"><span class="n">02</span><h4>Villas</h4><p>Edgewood in Navalur and Imperia in Coimbatore: premium 3 and 4 BHK villa communities.</p></div><div class="orow"><span class="n">03</span><h4>NRI desk</h4><p>A dedicated channel for non-resident investors in Chennai and Coimbatore.</p></div><div class="orow"><span class="n">04</span><h4>Quality engineering</h4><p>An on-site QA/QC lab at every project, logging 50,000+ checkpoints.</p></div>
+</div></section>
+<section class="sect why" id="why"><div class="in">
+  <p class="k">Why Radiance</p>
+  <div class="grid"><div class="cell"><h4>On-time, always</h4><p>100% commitment rate: every promise kept, every deadline met.</p></div><div class="cell"><h4>50,000+ checkpoints</h4><p>Digitally logged inspections from soil tests to tile adhesive pull-outs.</p></div><div class="cell"><h4>Strategic leadership</h4><p>Led by Managing Director Varun Manian and a specialist engineering team.</p></div><div class="cell"><h4>Investment grade</h4><p>Green, technically advanced developments built for long-term asset value.</p></div></div>
+</div></section>
+<section class="spot">
+  <div class="im"><img src="img/51.jpg" alt="Radiance Edgewood"/></div>
+  <div class="bd">
+    <p class="k">Featured project</p>
+    <h3>Radiance Edgewood</h3>
+    <p class="mt">Premium villas · Navalur, Chennai · from INR 2.49 Cr</p>
+    <p>Five acres of Navalur, 83 villas, and a completion clock counting down on the website itself: that is how confident this developer is about dates.</p>
+    <div class="specs"><div><b>83</b><i>Villas on 5 acres</i></div><div><b>3 & 4 BHK</b><i>Premium formats</i></div><div><b>Jan 2029</b><i>Committed completion</i></div></div>
+  </div>
+</section>
+<section class="sect" id="portfolio">
+  <div class="phead"><div><p class="k">Portfolio</p><h2 class="st">Signature <em>addresses.</em></h2></div><a class="btn dark" href="#contact">Enquire about a project</a></div>
+  <div class="pgrid"><a class="pc" href="#contact"><span class="im"><img loading="lazy" src="img/73.jpg" alt="Radiance Eternity"/></span><span class="bd"><h3>Radiance Eternity</h3><p>2 to 5 BHK · Thoraipakkam · from INR 1.78 Cr</p></span></a><a class="pc" href="#contact"><span class="im"><img loading="lazy" src="img/87.jpg" alt="Radiance Solitaire"/></span><span class="bd"><h3>Radiance Solitaire</h3><p>660 homes · Madhavaram · from INR 60 L</p></span></a><a class="pc" href="#contact"><span class="im"><img loading="lazy" src="img/105.jpg" alt="Radiance Riverwoods"/></span><span class="bd"><h3>Radiance Riverwoods</h3><p>Perur Main Road, Coimbatore</p></span></a><a class="pc txt" href="#contact"><span><h3>Radiance Imperia</h3><p>3 to 5 BHK villas · Veerakeralam, Coimbatore</p></span><span class="arrow">→</span></a><a class="pc txt" href="#contact"><span><h3>Radiance The Pride</h3><p>Delivered community</p></span><span class="arrow">→</span></a><a class="pc txt" href="#contact"><span><h3>Radiance Suprema</h3><p>Delivered community</p></span><span class="arrow">→</span></a></div>
+  
+</section>
+<section class="gal" style="--gc:4"><figure><img loading="lazy" src="img/92.jpg" alt="Pools above the city: Solitaire's amenity deck"/><figcaption>Pools above the city: Solitaire's amenity deck</figcaption></figure><figure><img loading="lazy" src="img/77.jpg" alt="Clubhouse living, Eternity"/><figcaption>Clubhouse living, Eternity</figcaption></figure><figure><img loading="lazy" src="img/75.jpg" alt="Interiors engineered like the structure"/><figcaption>Interiors engineered like the structure</figcaption></figure><figure><img loading="lazy" src="img/91.jpg" alt="Solitaire rising over Madhavaram"/><figcaption>Solitaire rising over Madhavaram</figcaption></figure></section>
+<section class="sect news" id="news"><div class="in"><p class="k">The on-time record</p><div class="nrow"><span class="d">294 units</span><span class="t">Committed Dec 2025 · completion certificate obtained Nov 2025</span></div><div class="nrow"><span class="d">395 units</span><span class="t">Committed Apr 2025 · completion certificate obtained Oct 2024</span></div><div class="nrow"><span class="d">523 units</span><span class="t">Committed Apr 2023 · completion certificate obtained Mar 2023</span></div><div class="nrow"><span class="d">322 units</span><span class="t">Committed Dec 2020 · completion certificate obtained Jun 2020</span></div></div></section>
+<section class="loc" id="locations" style="padding-top:92px">
+  <p class="k">Where we build</p>
+  <div class="cloud"><div class="tags"><span>Thoraipakkam</span><span>Navalur</span><span>Madhavaram</span><span>OMR</span><span>Chennai</span><span>Perur Road, Coimbatore</span><span>Veerakeralam, Coimbatore</span></div></div>
+</section>
+<section class="sect contact" id="contact"><div class="in">
+  <div>
+    <p class="k">Enquire</p>
+    <h2>Arrange a private<br/>viewing</h2>
+    <form class="cf" onsubmit="return false">
+      <label><span>Name</span><input type="text" placeholder="Your full name"/></label>
+      <label><span>Phone</span><input type="tel" placeholder="+"/></label>
+      <label><span>Interest</span><select><option>Radiance Edgewood</option><option>Radiance Eternity</option><option>Radiance Solitaire</option><option>Radiance Riverwoods</option><option>Radiance Imperia</option><option>Radiance The Pride</option><option>Radiance Suprema</option></select></label>
+      <button class="btn light" type="submit">Get in touch</button>
+    </form>
+  </div>
+  <div class="cinfo">
+    <div class="cell"><h5>Phone</h5><a href="tel:+917824000054">+91 78240 00054</a></div>
+    <div class="cell"><h5>Email</h5><a href="mailto:chennai@radiancerealty.in">chennai@radiancerealty.in</a></div>
+    <div class="cell"><h5>Office</h5><p>Radiance Realty Developers India Ltd, Chennai</p></div>
+    <div class="cell"><h5>Website</h5><a href="https://radiancerealty.in" target="_blank" rel="noopener">radiancerealty.in</a></div>
+  </div>
+</div></section>
+</main>
+<footer class="ftr"><div class="in"><span>RADIANCE REALTY · Chennai · Coimbatore</span><span>Independent design concept by Raghav Dua. All content and imagery belong to Radiance.</span></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script>
+gsap.registerPlugin(ScrollTrigger);
+if("scrollRestoration" in history)history.scrollRestoration="manual";window.scrollTo(0,0);
+const lenis=new Lenis({lerp:.09});lenis.on("scroll",ScrollTrigger.update);
+gsap.ticker.add(t=>lenis.raf(t*1000));gsap.ticker.lagSmoothing(0);
+const tl=gsap.timeline();
+tl.to(".pre b",{y:0,duration:.7,ease:"power3.out",delay:.15})
+.to(".pre s",{scaleX:1,duration:.6,ease:"power2.inOut"},"-=.25")
+.to("#pre",{yPercent:-100,duration:.9,ease:"power4.inOut",delay:.15})
+.set("#pre",{display:"none"})
+.from(".hero .media img",{scale:1.24,duration:2,ease:"power2.out"},"-=.9")
+.to("h1 .l>span",{y:0,duration:1,ease:"power3.out"},"-=1.8")
+.from(".hero .sub,.hero .acts",{opacity:0,y:18,duration:.7,stagger:.12},"-=1.2")
+.from(".hero .hstats div",{opacity:0,y:16,duration:.5,stagger:.06},"-=.8")
+.from(".nav",{opacity:0,y:-12,duration:.6},"-=.7");
+gsap.to(".hero .media img",{scale:1.16,ease:"none",scrollTrigger:{trigger:".hero",start:"top top",end:"bottom top",scrub:true}});
+ScrollTrigger.create({start:"top -60",onUpdate:s=>document.getElementById("nav").classList.toggle("on",s.scroll()>60)});
+const m=document.getElementById("mst");
+m.innerHTML=m.textContent.trim().split(/\s+/).map(w=>'<span class="w">'+w+"</span>").join(" ");
+gsap.to("#mst .w",{opacity:1,stagger:.05,ease:"none",scrollTrigger:{trigger:"#mst",start:"top 80%",end:"bottom 50%",scrub:.4}});
+gsap.utils.toArray(".spot .im img").forEach(im=>{gsap.fromTo(im,{yPercent:-6,scale:1.12},{yPercent:6,scale:1.12,ease:"none",scrollTrigger:{trigger:im.closest(".spot"),start:"top bottom",end:"bottom top",scrub:true}})});
+[".k",".st",".man p",".orow",".why .cell",".spot h3",".spot .specs div",".pc",".gal figure",".nrow",".cloud .tags span",".contact h2",".cf",".cinfo .cell"].forEach(s=>{gsap.utils.toArray(s).forEach((e,i)=>{gsap.from(e,{opacity:0,y:26,duration:.8,delay:(i%6)*.04,ease:"power3.out",scrollTrigger:{trigger:e,start:"top 94%"}})})});
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",e=>{const t=document.querySelector(a.getAttribute("href"));if(t){e.preventDefault();lenis.scrollTo(t,{duration:1.2,offset:-40})}})});
+</script>
+</body>
+</html>
